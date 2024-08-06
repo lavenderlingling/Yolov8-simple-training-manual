@@ -1,0 +1,1 @@
+# Yolov8-simple-training-manual
