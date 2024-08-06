@@ -1,0 +1,6 @@
+train: C:\Users\kevin\Work\yolov8\dataSets\path\train.txt
+val: C:\Users\kevin\Work\yolov8\dataSets\path\val.txt
+test: C:\Users\kevin\Work\yolov8\dataSets\path\test.txt
+
+nc: 2
+names: ['草莓', '巧克力']
