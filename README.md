@@ -13,7 +13,7 @@
 ## Training process | 訓練過程
 - 分配 train、validation、test 的測試資料比例
     - 在 \yolov8 目錄底下，執行 python split_train_val.py
-    - 預設比例為 train:90%、validation:10%、test:0%
+    - 預設比例為 train:70%、validation:20%、test:10%
 - 定義 labels 的名稱，如果之前已經執行過且 labes 的內容不變，可以跳過此一步驟。
     - 在 \yolov8 目錄底下，執行 python set_labels.py
     - 在終端機螢幕上會要求輸入 lables 的內容，請依序輸入。
@@ -44,7 +44,7 @@
     - 在 \yolov8 目錄底下，執行 python train_continue.py。
     - 程式將要求選擇接續哪一個訓練檔？
     - 可在 \yolov8\runs\detect\trainX\weights last.pt 檔，此為前次學習的最終狀態，相關的係數皆存放在此檔案中。
-    - 選擇完後，yolo 則接續前epoch往下學習。
+    - 選擇完後，yolo 則接續前 epoch 往下學習。
 ## Precautions | 注意事項
-由於github有上傳資料的上限，所以 yolo v8 的官方模型，請依據個人需求至底下鏈結下載合適的模型至 \yolov8\models 目錄。
+由於 github 有上傳資料的上限，所以 yolo v8 的官方模型，請依據個人需求至底下鏈結下載合適的模型至 \yolov8\models 目錄。
 https://docs.ultralytics.com/models/yolov8/#supported-tasks-and-modes
