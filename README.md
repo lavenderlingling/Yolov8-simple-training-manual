@@ -11,6 +11,8 @@
 2. 將欲訓練的圖檔 Copy 到 \yolov8\dataSets\images 目錄底下
 3. 將已標簽完成的 .txt 檔(yolo label bndBox 格式)，或是 .xml 檔(PASCAL VOC 格式) Copy 到 \yolov8\dataSets\Annotations 目錄底下
 ## Training process | 訓練過程
+- all_in_one.py 首先執行程式，由上往下依序點選執行
+![image](picture or gif url)
 - 分配 train、validation、test 的測試資料比例
     - 在 \yolov8 目錄底下，執行 python split_train_val.py
     - 預設比例為 train: 70%、validation: 30%、test: 0%
