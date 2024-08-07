@@ -13,7 +13,7 @@
 ## Training process | 訓練過程
 - 分配 train、validation、test 的測試資料比例
     - 在 \yolov8 目錄底下，執行 python split_train_val.py
-    - 預設比例為 train:70%、validation:20%、test:10%
+    - 預設比例為 train:70%、validation:30%、test:0%
 - 定義 labels 的名稱，如果之前已經執行過且 labes 的內容不變，可以跳過此一步驟。
     - 在 \yolov8 目錄底下，執行 python set_labels.py
     - 在終端機螢幕上會要求輸入 lables 的內容，請依序輸入。
