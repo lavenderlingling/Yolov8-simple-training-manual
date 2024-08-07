@@ -1,16 +1,16 @@
-# Yolov8-simple-training-manual
+# Yolov8-simple-training-manual | Yolov8簡易訓練手冊
 ## Description | 介紹
 設計 All in one 整合程式，在 \yolov8 底下執行 python all_in_one.py，藉由此單一程式可以完成所有訓練的工作。
 
 ## Table of Contents | 目錄
-- [事前準備工作](#事前準備工作)
-- [訓練過程](#訓練過程)
-- [注意事項](#注意事項)
-## 事前準備工作
+- [事前準備工作 | Preparatory work](#事前準備工作-|-Preparatory-work)
+- [訓練過程 | Training process](#訓練過程-|-training-process)
+- [注意事項 | Precautions](#注意事項-|-Precautions)
+## 事前準備工作 | Preparatory work
 1. 將所有的檔案 clone 到 local 端的電腦上
 2. 將欲訓練的圖檔Copy到 \yolov8\dataSets\images 目錄底下
 3. 將已標簽完成的 .txt 檔(yolo label bndBox 格式)，或是 .xml 檔(PASCAL VOC 格式) Copy 到 \yolov8\dataSets\Annotations 目錄底下
-## 訓練過程
+## 訓練過程 | Training process
 - 分配 train、validation、test 的測試資料比例
     - 在 \yolov8 目錄底下，執行 python split_train_val.py
     - 預設比例為 train:90%、validation:10%、test:0%
@@ -45,6 +45,6 @@
     - 程式將要求選擇接續哪一個訓練檔？
     - 可在 \yolov8\runs\detect\trainX\weights last.pt 檔，此為前次學習的最終狀態，相關的係數皆存放在此檔案中。
     - 選擇完後，yolo 則接續前epoch往下學習。
-## 注意事項
+## 注意事項 | Precautions
 由於github有上傳資料的上限，所以 yolo v8 的官方模型，請依據個人需求至底下鏈結下載合適的模型至 \yolov8\models 目錄。
 https://docs.ultralytics.com/models/yolov8/#supported-tasks-and-modes
