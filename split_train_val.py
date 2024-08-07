@@ -13,8 +13,8 @@ def split_train_val():
     parser.add_argument('--txt_path', default=abs_path+'\dataSets\ImageSets/Main', type=str, help='output txt label path')
     opt = parser.parse_args()
     trainval_percent = 1.0  # 训练集和验证集所占比例。 这里没有划分测试集
-    train_percent = 0.9  # 训练集所占比例，可自己进行调整
-    val_percent = 0.1  # 验证集所占比例，可自己进行调整
+    train_percent = 0.7  # 训练集所占比例，可自己进行调整
+    val_percent = 0.3  # 验证集所占比例，可自己进行调整
     test_percent = 0.0  # 测试集所占比例，可自己进行调整
     xmlfilepath = opt.xml_path
     txtsavepath = opt.txt_path
