@@ -5,6 +5,7 @@
 ## Table of Contents | 目錄
 - [Preparatory work | 事前準備工作](#Preparatory-work-|-事前準備工作)
 - [Training process | 訓練過程](#Training-process-|-訓練過程)
+- [Testing phase | 測試階段](#Testing-phase-|-測試階段)
 - [Precautions | 注意事項](#Precautions-|-注意事項)
 ## Preparatory work | 事前準備工作
 1. 將所有的檔案 clone 到 local 端的電腦上
@@ -50,6 +51,10 @@
     - 程式將要求選擇接續哪一個訓練檔？
     - 可在 \yolov8\runs\detect\trainX\weights last.pt 檔，此為前次學習的最終狀態，相關的係數皆存放在此檔案中。
     - 選擇完後，yolo 則接續前 epoch 往下學習。
+## Testing phase | 測試階段
+- 在本機端執行，使用 jupyter notebook 開啟 Detect objects.py，將已訓練完的 best.pt 加載模型
+- 鏡頭開始連續偵測畫面中物體
+  ![GitHub影片](草莓麵包Yolov8測試影片.mp4)
 ## Precautions | 注意事項
 由於 github 有上傳資料的上限，所以 yolo v8 的官方模型，請依據個人需求至底下鏈結下載合適的模型至 \yolov8\models 目錄。
 https://docs.ultralytics.com/models/yolov8/#supported-tasks-and-modes
