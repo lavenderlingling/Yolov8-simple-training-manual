@@ -57,7 +57,7 @@
     - 可在 \yolov8\runs\detect\trainX\weights last.pt 檔，此為前次學習的最終狀態，相關的係數皆存放在此檔案中。
     - 選擇完後，yolo 則接續前 epoch 往下學習。
 ## Testing phase | 測試階段
-- 在本機端執行，使用 jupyter notebook 開啟 Detect objects.py，將已訓練完的 best.pt 加載模型
+- 在本機端執行，使用 jupyter notebook 開啟 Detect objects.jpynb，將已訓練完的 best.pt 加載模型
 - 鏡頭開始連續偵測畫面中物體
   [**草莓麵包Yolov8訓練影片**](https://youtu.be/WL8N8DOD-e4))
 ## Precautions | 注意事項
