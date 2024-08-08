@@ -18,22 +18,22 @@
     ![image](labelImg.png)
 - 將已標簽完成的 .txt 檔(yolo label bndBox 格式)，或是 .xml 檔(PASCAL VOC 格式) Copy 到 \yolov8\dataSets\Annotations 目錄底下
 ## Training process | 訓練過程
-- all_in_one.py 首先執行程式，由上往下依序點選執行
+- **all_in_one.py** 首先執行程式，由上往下依序點選執行
 
 ![image](messageImage.jpg)
 
-- split_train_val.py 分配 train、validation、test 的測試資料比例
+- **split_train_val.py** 分配 train、validation、test 的測試資料比例
     - 在 \yolov8 目錄底下，執行 python split_train_val.py
     - 預設比例為 train: 70%、validation: 30%、test: 0%
-- set_labels.py 定義 labels 的名稱，如果之前已經執行過且 labels 的內容不變，可以跳過此一步驟。
+- **set_labels.py** 定義 labels 的名稱，如果之前已經執行過且 labels 的內容不變，可以跳過此一步驟。
     - 在 \yolov8 目錄底下，執行 python set_labels.py
     - 在終端機螢幕上會要求輸入 labels 的內容，請依序輸入。
     - 例如 labels 為 0: dog 及 1: cat，則輸入 'dog','cat'
     - 執行完後，程式將會更改 \yolov8\data\key.ymal 及 \yolov8\xml_to_yolo.py 兩個檔案的設定
-- xml_to_yolo.py 資料轉成 yolo 訓練格式
+- **xml_to_yolo.py** 資料轉成 yolo 訓練格式
     - 在 \yolov8 目錄底下，執行 python xml_to_yolo.py
     - 執行完後，程式將在 \yolov8\dataSets 目錄底下新增 ImageSets、labels、path 三個新目錄。
-- train.py 開始訓練
+- **train.py** 開始訓練
     - 在 \yolov8 目錄底下，執行 python train.py
     - 可選擇epochs為50、100、150、200、250、300
     - 程式將跳出視窗，要求選擇欲訓練的模型。
@@ -43,13 +43,13 @@
 - 完成訓練
     - 完成訓練後，電腦會在 \yolov8\runs\detect 目錄底下新產生 trainX 的目錄。
     - 在 trainX\weights 目錄底下，可發現 best.pt 檔案，該檔案即為訓練出來的模型檔。
-- predect.py 執行偵測
+- **predect.py** 執行偵測
     - 將欲進行偵測的圖檔、影片檔Copy到 \yolov8\predect 底下。
     - 在 \yolov8 目錄底下，執行 python predect.py。
     - 程式將要求選擇欲使用哪一個模型檔來進行偵測
     - 我們可以選擇之前已訓練好的模型 best.py 來對 \yolov8\predect 底下的內容偵測。
     - 程式將新產生一個 predectX 目錄在 \yolov8\runs\detect 底下，偵測結果則輸出到此目錄以下。
-- train_continue.py 接續訓練
+- **train_continue.py** 接續訓練
     - yolo 在進行訓練時，每完成一個epoch就會產生一個暫存檔。
     - 如果在訓練的過程中被中斷，可以於事後再接續先前的訓練，而毋需重新訓練。
     - 在 \yolov8 目錄底下，執行 python train_continue.py。
