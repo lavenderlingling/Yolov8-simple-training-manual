@@ -1,6 +1,6 @@
 # Yolov8-simple-training-manual | Yolov8簡易訓練手冊
 ## Description | 介紹
-設計 All in one 整合程式，在 \yolov8 底下執行 python all_in_one.py，藉由此單一程式可以完成所有訓練的工作。
+設計 All in one 整合程式，在 \yolov8 底下執行 python all_in_one.py，藉由此單一程式可以完成所有訓練的工作。並結合攝像頭測試結果。
 
 ## Table of Contents | 目錄
 - [Preparatory work | 事前準備工作](#Preparatory-work-|-事前準備工作)
@@ -8,10 +8,15 @@
 - [Testing phase | 測試階段](#Testing-phase-|-測試階段)
 - [Precautions | 注意事項](#Precautions-|-注意事項)
 ## Preparatory work | 事前準備工作
-1. 將所有的檔案 clone 到 local 端的電腦上
-2. 將欲訓練的圖檔 Copy 到 \yolov8\dataSets\images 目錄底下
-3. 標籤照片物品使用 LabelImg 軟體，注意 python 要使用 3.10 版以下的
-4. 將已標簽完成的 .txt 檔(yolo label bndBox 格式)，或是 .xml 檔(PASCAL VOC 格式) Copy 到 \yolov8\dataSets\Annotations 目錄底下
+- 建立高效率跑模型環境
+    - 使用nvidia cuda 來跑模型訓練 (相關操作可以參考 [**CUDA安裝及環境設定教學**](https://github.com/pp657783/ResNet_Example))。
+- 將所有的程式包 clone 到 local 端的電腦上
+- 將欲訓練的圖檔 copy 到 \yolov8\dataSets\images 目錄底下
+- 標籤照片物品使用 LabelImg 軟體，**注意 python 要使用 3.10 版以下的**
+    - 先在 Anaconda Powershell Prompt 上 pip install labelImg。
+    - 執行 labelImg 進入程式畫面 (相關操作可以參考 [**labelImg 的祈佑小教室**](https://hackmd.io/@zxcasd89525/Syw8BypDi))。
+    ![image](labelImg.png)
+- 將已標簽完成的 .txt 檔(yolo label bndBox 格式)，或是 .xml 檔(PASCAL VOC 格式) Copy 到 \yolov8\dataSets\Annotations 目錄底下
 ## Training process | 訓練過程
 - all_in_one.py 首先執行程式，由上往下依序點選執行
 
@@ -54,7 +59,7 @@
 ## Testing phase | 測試階段
 - 在本機端執行，使用 jupyter notebook 開啟 Detect objects.py，將已訓練完的 best.pt 加載模型
 - 鏡頭開始連續偵測畫面中物體
-  ![GitHub影片](草莓麵包Yolov8測試影片.mp4)
+  [**草莓麵包Yolov8訓練影片**](https://youtu.be/WL8N8DOD-e4))
 ## Precautions | 注意事項
 由於 github 有上傳資料的上限，所以 yolo v8 的官方模型，請依據個人需求至底下鏈結下載合適的模型至 \yolov8\models 目錄。
 https://docs.ultralytics.com/models/yolov8/#supported-tasks-and-modes
