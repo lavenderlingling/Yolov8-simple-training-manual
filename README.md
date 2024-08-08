@@ -15,12 +15,12 @@
 - 標籤照片物品使用 LabelImg 軟體，**注意 python 要使用 3.10 版以下的**
     - 先在 Anaconda Powershell Prompt 上 pip install labelImg。
     - 執行 labelImg 進入程式畫面 (相關操作可以參考 [**labelImg 的祈佑小教室**](https://hackmd.io/@zxcasd89525/Syw8BypDi))。
-    ![image](labelImg.png)
+    ![image](pictures/labelImg.png)
 - 將已標簽完成的 .txt 檔(yolo label bndBox 格式)，或是 .xml 檔(PASCAL VOC 格式) Copy 到 \yolov8\dataSets\Annotations 目錄底下
 ## Training process | 訓練過程
 - **all_in_one.py** 首先執行程式，由上往下依序點選執行
 
-![image](messageImage.jpg)
+![image](pictures/messageImage.jpg)
 
 - **split_train_val.py** 分配 train、validation、test 的測試資料比例
     - 在 \yolov8 目錄底下，執行 python split_train_val.py
