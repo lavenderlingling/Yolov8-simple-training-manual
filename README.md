@@ -9,7 +9,8 @@
 ## Preparatory work | 事前準備工作
 1. 將所有的檔案 clone 到 local 端的電腦上
 2. 將欲訓練的圖檔 Copy 到 \yolov8\dataSets\images 目錄底下
-3. 將已標簽完成的 .txt 檔(yolo label bndBox 格式)，或是 .xml 檔(PASCAL VOC 格式) Copy 到 \yolov8\dataSets\Annotations 目錄底下
+3. 標籤照片物品使用 LabelImg 軟體，注意 python 要使用 3.10 版以下的
+4. 將已標簽完成的 .txt 檔(yolo label bndBox 格式)，或是 .xml 檔(PASCAL VOC 格式) Copy 到 \yolov8\dataSets\Annotations 目錄底下
 ## Training process | 訓練過程
 - all_in_one.py 首先執行程式，由上往下依序點選執行
 
