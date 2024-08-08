@@ -59,7 +59,7 @@
 ## Testing phase | 測試階段
 - 在本機端執行，使用 jupyter notebook 開啟 Detect objects.jpynb，將已訓練完的 best.pt 加載模型
 - 鏡頭開始連續偵測畫面中物體
-  [**草莓麵包Yolov8訓練影片**](https://youtu.be/WL8N8DOD-e4))
+  [**草莓麵包Yolov8訓練影片**](https://youtu.be/WL8N8DOD-e4)
 ## Precautions | 注意事項
 由於 github 有上傳資料的上限，所以 yolo v8 的官方模型，請依據個人需求至底下鏈結下載合適的模型至 \yolov8\models 目錄。
 https://docs.ultralytics.com/models/yolov8/#supported-tasks-and-modes
