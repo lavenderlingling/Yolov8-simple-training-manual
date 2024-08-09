@@ -3,9 +3,9 @@
 設計 All in one 整合程式，在 \yolov8 底下執行 python all_in_one.py，藉由此單一程式可以完成所有訓練的工作。並結合攝像頭測試結果。
 
 ## Table of Contents | 目錄
-- [Preparatory work | 事前準備工作](#Preparatory-work-|-事前準備工作)
-- [Training process | 訓練過程](#Training-process-|-訓練過程)
-- [Testing phase | 測試階段](#Testing-phase-|-測試階段)
+- [Preparatory work | 事前準備工作](#Preparatory-work|事前準備工作)
+- [Training process | 訓練過程](#Training-process|訓練過程)
+- [Testing phase | 測試階段](#Testingphase|測試階段)
 - [Precautions | 注意事項](#Precautions-|-注意事項)
 ## Preparatory work | 事前準備工作
 - 建立高效率跑模型環境
